@@ -19,7 +19,7 @@ export function Footer() {
 
           <div className="text-center md:text-right text-gray-600 dark:text-gray-400 text-sm">
             <p>&copy; 2025 Roway Backend · Powered by Spring Boot & Heroku</p>
-            <p className="mt-1">Built with ❤️ for developers worldwide</p>
+            <p className="mt-1">Built with ❤️ VANQUOCBUI</p>
           </div>
         </div>
       </div>

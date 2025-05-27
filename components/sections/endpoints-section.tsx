@@ -59,8 +59,7 @@ export function EndpointsSection() {
               API <GradientText>Endpoints</GradientText>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Khám phá các endpoints mạnh mẽ với documentation chi tiết và response times tối ưu
-            </p>
+              Discover powerful endpoints with detailed documentation and optimal response Times            </p>
           </div>
         </SmoothReveal>
 
@@ -89,11 +88,10 @@ export function EndpointsSection() {
                       <code className="text-sm font-mono text-blue-600 dark:text-blue-400">{endpoint.path}</code>
                       <Badge
                         variant="outline"
-                        className={`text-xs ${
-                          endpoint.status === "beta"
-                            ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
-                            : "border-green-500 text-green-600 dark:text-green-400"
-                        }`}
+                        className={`text-xs ${endpoint.status === "beta"
+                          ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
+                          : "border-green-500 text-green-600 dark:text-green-400"
+                          }`}
                       >
                         {endpoint.status}
                       </Badge>
@@ -111,7 +109,7 @@ export function EndpointsSection() {
               ))}
 
               <div className="text-center pt-4">
-                <Button variant="outline" className="transition-all duration-200 hover:scale-105">
+                <Button variant="outline" className="transition-all duration-200 hover:scale-105 dark:bg-gray-800 dark:text-white/70">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Explore all endpoints
                 </Button>

@@ -18,9 +18,9 @@ export function CTASection() {
                 <Rocket className="h-8 w-8 text-white" />
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Sẵn sàng khởi động dự án?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Ready to start the project?</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                Tham gia cộng đồng 1000+ developers đang xây dựng ứng dụng tuyệt vời với Roway API.
+                Join a community of 1000+ developers building amazing applications with Roway API.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -29,12 +29,12 @@ export function CTASection() {
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 group transition-all duration-200"
                 >
                   <Star className="h-5 w-5 mr-2" />
-                  Bắt đầu miễn phí
+                  Start free
                   <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
                 </Button>
-                <Button variant="outline" size="lg" className="px-8 py-3 transition-all duration-200 hover:scale-105">
+                <Button variant="outline" size="lg" className="px-8 py-3 transition-all duration-200 hover:scale-105 dark:bg-gray-800 dark:text-white/70">
                   <BookOpen className="h-5 w-5 mr-2" />
-                  Đọc Documentation
+                  Read Documentation
                 </Button>
               </div>
             </CardContent>

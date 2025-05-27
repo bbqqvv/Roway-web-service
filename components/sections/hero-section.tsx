@@ -7,6 +7,7 @@ import { GradientText } from "@/components/ui/gradient-text"
 import { SmoothReveal } from "@/components/ui/smooth-reveal"
 import { CardContent } from "@/components/ui/card"
 import { Sparkles, Rocket, ArrowRight, Play, CheckCircle, Terminal } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -25,31 +26,35 @@ export function HeroSection() {
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
                 API Platform
                 <br />
-                <GradientText className="text-5xl lg:text-6xl font-bold">Thế hệ mới</GradientText>
+                <GradientText className="text-5xl lg:text-6xl font-bold">New generation</GradientText>
               </h1>
             </SmoothReveal>
 
             <SmoothReveal delay={0.3}>
               <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 max-w-xl">
-                Trải nghiệm sức mạnh của RESTful API hiện đại với hiệu suất vượt trội, bảo mật enterprise và khả năng mở
-                rộng không giới hạn.
+                Experience the power of modern Restful API with outstanding performance, Enterprise security and open ability
+                Unlimited.
               </p>
             </SmoothReveal>
 
             <SmoothReveal delay={0.4}>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 group transition-all duration-200"
-                >
-                  <Rocket className="h-5 w-5 mr-2" />
-                  Bắt đầu miễn phí
-                  <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                </Button>
-                <Button variant="outline" size="lg" className="px-8 py-3 transition-all duration-200 hover:scale-105">
-                  <Play className="h-5 w-5 mr-2" />
-                  Xem Demo
-                </Button>
+                <Link href="/register">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 group transition-all duration-200"
+                  >
+                    <Rocket className="h-5 w-5 mr-2" />
+                    Start free
+                    <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                  </Button>
+                </Link>
+                <Link href="/docs">
+                  <Button variant="outline" size="lg" className="px-8 py-3 transition-all duration-200 hover:scale-105 dark:bg-white">
+                    <Play className="h-5 w-5 mr-2" />
+                    View Demo
+                  </Button>
+                </Link>
               </div>
             </SmoothReveal>
 
@@ -84,7 +89,7 @@ export function HeroSection() {
 
                 <div className="space-y-3 font-mono text-sm">
                   <div className="text-gray-700 dark:text-gray-300">
-                    <span className="text-emerald-500 font-semibold">GET</span> /api/v1/users
+                    <span className="text-emerald-500 font-semibold">GET</span> /api/users
                   </div>
                   <div className="pl-4 text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-slate-800/50 rounded-lg p-3 text-xs">
                     {`{

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { GradientText } from "@/components/ui/gradient-text"
 import { Server, Github, BookOpen, Moon, Sun } from "lucide-react"
 import { useTheme } from "@/components/theme-provider"
+import Link from "next/link"
 
 interface HeaderProps {
   apiStatus: "online" | "offline" | "checking"
@@ -45,21 +46,25 @@ export function Header({ apiStatus }: HeaderProps) {
               variant="outline"
               size="sm"
               onClick={toggleTheme}
-              className="transition-all duration-200 hover:scale-105"
+              className="transition-all duration-200 hover:scale-105 dark:bg-white"
             >
               {theme === "dark" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
             </Button>
-            <Button variant="outline" size="sm" className="transition-all duration-200 hover:scale-105">
-              <Github className="h-4 w-4 mr-2" />
-              GitHub
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-200 hover:scale-105"
-            >
-              <BookOpen className="h-4 w-4 mr-2" />
-              Docs
-            </Button>
+            <Link href="https://github.com/bbqqvv">
+              <Button variant="outline" size="sm" className="transition-all duration-200 hover:scale-105 dark:bg-white">
+                <Github className="h-4 w-4 mr-2" />
+                GitHub
+              </Button>
+            </Link>
+            <Link href="https://deepwiki.com/bbqqvv/BackendE-Commerce/5-order-management">
+              <Button
+                size="sm"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-200 hover:scale-105 "
+              >
+                <BookOpen className="h-4 w-4 mr-2" />
+                Docs
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

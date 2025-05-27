@@ -45,10 +45,10 @@ export function FeaturesSection() {
         <SmoothReveal>
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Tính năng <GradientText>đột phá</GradientText>
+              Feature <GradientText>breakthrough</GradientText>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Được xây dựng với công nghệ tiên tiến nhất để mang lại trải nghiệm developer tuyệt vời
+              Built with the latest technology to deliver an amazing developer experience
             </p>
           </div>
         </SmoothReveal>
@@ -69,7 +69,7 @@ export function FeaturesSection() {
                       <p className="text-gray-600 dark:text-gray-300 mb-3 text-sm leading-relaxed">
                         {feature.description}
                       </p>
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-1.5 dark:text-gray-400 text-gray-500">
                         {feature.details.map((detail, i) => (
                           <Badge key={i} variant="outline" className="text-xs">
                             {detail}
