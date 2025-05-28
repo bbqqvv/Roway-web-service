@@ -59,7 +59,7 @@ export function Header({ apiStatus }: HeaderProps) {
             <Link href="https://deepwiki.com/bbqqvv/BackendE-Commerce/5-order-management">
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-200 hover:scale-105 "
+                className="bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-200 hover:scale-105 text-white dark:text-white"
               >
                 <BookOpen className="h-4 w-4 mr-2" />
                 Docs

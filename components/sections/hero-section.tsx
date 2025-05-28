@@ -42,7 +42,7 @@ export function HeroSection() {
                 <Link href="/register">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 group transition-all duration-200"
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 group transition-all duration-200 dark:text-white  text-white"
                   >
                     <Rocket className="h-5 w-5 mr-2" />
                     Start free
